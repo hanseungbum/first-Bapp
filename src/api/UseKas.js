@@ -2,7 +2,6 @@ import axios from "axios";
 import {
     ACCESS_KEY_ID,
     SECRET_ACCESS_KEY,
-    NFT_CONTRACT_ADDRESS,
     CHAIN_ID,
   } from "../constants";
 

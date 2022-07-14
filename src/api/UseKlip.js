@@ -1,6 +1,5 @@
 import axios from "axios";
 import {
-  COUNT_CONTRACT_ADDRESS,
   MARKET_CONTRACT_ADDRESS,
   NFT_CONTRACT_ADDRESS,
 } from "../constants";
@@ -15,13 +14,14 @@ const getKlipAccessUrl = (method, request_key) => {
   }
   return `kakaotalk://klipwallet/open?url=https://klipwallet.com/?target=/a2a?request_key=${request_key}`;
 };
-export const buyCard = async (tokenId, setQrvalue, callback) => {
+
+export const buyCard = async (tokenId, price, setQrvalue, callback) => {
   const functionJson =
-    '{ "constant": false, "inputs": [ { "name": "tokenId", "type": "uint256" }, { "name": "NFTAddress", "type": "address" } ], "name": "buyNFT", "outputs": [ { "name": "", "type": "bool" } ], "payable": true, "stateMutability": "payable", "type": "function" }';
+    '{ "constant": false, "inputs": [ { "name": "tokenId", "type": "uint256" }, { "name": "NFT", "type": "address" } ], "name": "buyNFT", "outputs": [ { "name": "", "type": "bool" } ], "payable": true, "stateMutability": "payable", "type": "function" }';
   executeContract(
     MARKET_CONTRACT_ADDRESS,
     functionJson,
-    "10000000000000000",
+    (Number(price) + 10000000000000000).toString(),
     `[\"${tokenId}\",\"${NFT_CONTRACT_ADDRESS}\"]`,
     setQrvalue,
     callback
@@ -55,7 +55,7 @@ export const mintCardWithURI = async (
 ) => {
   const functionJson =
     '{ "constant": false, "inputs": [ { "name": "to", "type": "address" }, { "name": "tokenId", "type": "uint256" }, { "name": "tokenURI", "type": "string" } ], "name": "mintWithTokenURI", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }';
-  executeContract(
+    executeContract(
     NFT_CONTRACT_ADDRESS,
     functionJson,
     "0",
@@ -142,37 +142,3 @@ export const getAddress = (setQrvalue, callback) => {
       }, 1000);
     });
 };
-
-// export const setCount = (count, setQrvalue) => {
-//   axios
-//     .post(A2P_API_PREPARE_URL, {
-//       bapp: {
-//         name: APP_NAME,
-//       },
-//       type: "execute_contract",
-//       transaction: {
-//         to: COUNT_CONTRACT_ADDRESS,
-//         abi:
-//           '{ "constant": false, "inputs": [ { "name": "_count", "type": "uint256" } ], "name": "setCount", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }',
-//         value: "0",
-//         params: `[\"${count}\"]`,
-//       },
-//     })
-//     .then((response) => {
-//       const { request_key } = response.data;
-//       const qrcode = `https://klipwallet.com/?target=/a2a?request_key=${request_key}`;
-//       setQrvalue(qrcode);
-//       let timerId = setInterval(() => {
-//         axios
-//           .get(
-//             `https://a2a-api.klipwallet.com/v2/a2a/result?request_key=${request_key}`
-//           )
-//           .then((res) => {
-//             if (res.data.result) {
-//               console.log(`[Result] ${JSON.stringify(res.data.result)}`);
-//               clearInterval(timerId);
-//             }
-//           });
-//       }, 1000);
-//     });
-// };

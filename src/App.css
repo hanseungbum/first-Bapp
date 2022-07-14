@@ -1,8 +1,10 @@
 * {
+  width: 360px;
   border: 0;
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans KR';
 }
 
 html {
@@ -11,11 +13,11 @@ html {
 }
 
 .App {
-  background-color: black;
+  /* background-color: black; */
 }
 
 body {
   height: 100%;
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  /* color: white; */
 }

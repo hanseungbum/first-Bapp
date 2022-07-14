@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Dine - 나만의 특별한 다이닝시간
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![Frame 89](https://user-images.githubusercontent.com/97182033/155728940-b0efbefd-43be-42e8-978b-3ebace2dc4cb.png)
 
-In the project directory, you can run:
 
-### `npm start`
+## Background
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> 2022년 트렌드는 ‘'Gotcha Power', 즉 득템력이라고 할 수 있다. 오픈런, 웨이팅 등 희소한 상품을 얻고, 갖기 어려운 아이템을 누리는 것이 하나의 문화로 자리잡고 있다. 원하는 음식을 맛보기 위해 줄을 서고, 식당 오픈 전부터 미리 가서 기다림을 마다하지 않는 것이다. 우리는 여기서 더 나아가 이러한 한정된 다이닝 아이템들이 투자의 일환, 하나의 마케팅 수단으로 발전할 수 있다는 가능성과 발생하는 문제점에 주목하였다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+&nbsp;
 
-### `npm test`
+## Existing Problem
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+>1. 가짜 아이템 (티켓) 리셀 성행
+>2. 웨이팅, 오픈런으로 인한 식당가 혼잡
+>3. 한정된 다이닝 예약 플랫폼
+>4. 식당예약 취소 시 수수료 부담 / 예약 처리 곤란
 
-### `npm run build`
+&nbsp;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Solutions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+>1. 해당 자산에 대한 원본 인증과 소유권 증명이 가능한 NFT를 활용한 가짜 리셀 방지
+>2. 다이닝 예약을 통한 식당가 혼잡 해소
+>3. 쿠킹 클래스 / 식사권 / 리미티드 예약 - 세분화된 다이닝 카테고리로 다채로운 식문화 제공
+>4. 간편한 식사권 판매/거래를 통한 취소수수료, 노쇼 문제 해소
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+&nbsp;
 
-### `npm run eject`
+## Thanks
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+>멋쟁이 사자처럼  
+>그라운드 X  
+>티켓팀
+>굿

@@ -40,5 +40,6 @@ export const uploadMetaData = async (image, name, category, title, datetime, des
     } catch(e) {
         console.log(e);
         return false;
+        
     }
 }

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faWallet, faPlus, faArrowLeft, faAngleDown, faCheck,faSearch, faAngleRight, faAngleLeft} from "@fortawesome/free-solid-svg-icons";
 import { getBalance, fetchCardsOf, getPriceOf, sellCardOf } from "./api/UseCaver";
 import * as KlipAPI from "./api/UseKlip";
-import * as KasAPI from "./api/UseKAS";
+import * as KasAPI from "./api/UseKas";
 import DatePicker, { CalendarContainer } from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import _ from 'lodash';
